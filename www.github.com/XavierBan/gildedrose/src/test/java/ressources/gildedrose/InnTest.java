@@ -44,12 +44,12 @@ public class InnTest {
 	  test.updateQuality();
 	  test.updateQuality();
 	  
-	  Iterator<Item> iteJuste=juste.getItems().iterator();
-	  Iterator<Item> iteTest=test.getItems().iterator();
+	  Iterator<Item> iteratorJuste=juste.getItems().iterator();
+	  Iterator<Item> iteratorTest=test.getItems().iterator();
 	  
-	 while(iteJuste.hasNext()) {
-		 itemJuste=iteJuste.next();
-		 itemTest=iteTest.next();
+	 while(iteratorJuste.hasNext()) {
+		 itemJuste=iteratorJuste.next();
+		 itemTest=iteratorTest.next();
 		 assertEquals(itemJuste.getName(),itemTest.getName());
 		 assertEquals(itemJuste.getQuality(),itemTest.getQuality());
 		 assertEquals(itemJuste.getSellIn(),itemTest.getSellIn());
